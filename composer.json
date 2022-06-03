@@ -1,0 +1,11 @@
+{
+    "name": "etros/portfolio",
+    "description": "Postfólio pessoal",
+    "authors": [
+        {
+            "name": "uelionobre",
+            "email": "uelionobre@hotmail.com"
+        }
+    ],
+    "require": {}
+}
