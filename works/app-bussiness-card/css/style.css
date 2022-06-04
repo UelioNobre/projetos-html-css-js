@@ -1,0 +1,71 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: bisque;
+}
+
+main h1 {
+  font-size: 3.8rem;
+  text-align: center;
+  margin-top: -3rem;
+  font-family: "Homemade Apple", cursive;
+  color: brown;
+}
+
+main h1 small {
+  display: block;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 300;
+  font-family: "Cousine", monospace;
+}
+
+main nav {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+main nav a {
+  margin: 0 0.4rem;
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+main nav a:hover {
+  transform: scale(2);
+  margin: 0 1.8rem;
+}
+main nav a:hover i {
+  color: brown;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 460px) {
+  main h1 {
+    line-height: 5rem;
+  }
+  main h1 small {
+    line-height: 1.6rem;
+  }
+}
