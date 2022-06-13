@@ -1,0 +1,167 @@
+:root {
+  --color-primary: rgb(240, 142, 29);
+  --text-color: #eee;
+  --text-color-credits: #eee;
+
+  --calculator-bg-primary: #333;
+
+  --window-border-color: rgb(255, 255, 255, 0.3);
+  --window-background-color: rgb(50, 50, 50);
+
+  --button-close: tomato;
+  --button-minimize: rgb(241, 190, 4);
+  --button-maximize: rgb(11, 238, 90);
+
+  --body-bg-primary: var(--button-close);
+  --body-bg-secondary: indigo;
+
+  --pure-white: #fff;
+  --pure-black: #000;
+
+  --button-advanced: rgba(255, 255, 255, 0.1);
+  --button-color: rgba(255, 255, 255, 0.3);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Noto Sans Display", sans-serif;
+
+  background-image: linear-gradient(
+    145deg,
+    var(--body-bg-primary),
+    var(--body-bg-secondary)
+  );
+  background-size: cover;
+  background-repeat: none;
+  min-height: 100%;
+  height: 100vh;
+  overflow: scroll;
+}
+
+main {
+  height: calc(100vh - 15vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+#calculator {
+  width: 230px;
+  /* margin: 0 auto; */
+  border: 1px solid var(--window-border-color);
+  border-radius: 0.7rem;
+  background-color: var(--calculator-bg-primary);
+  overflow: hidden;
+  box-shadow: 0 0 1rem var(--pure-black);
+}
+/* -------------------------------------------------- */
+/* Window`s title */
+#title-bar {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.6rem;
+  color: var(--text-color);
+}
+
+/* Action`s button of the title bar */
+#buttons {
+  flex: 1;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#buttons button {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: 0.4rem;
+  padding: 0.01rem;
+  border-radius: 2rem;
+  border: none;
+  color: var(--calculator-bg-primary);
+  text-transform: lowercase;
+  font-size: 0.9rem;
+}
+
+#buttons button:first-child {
+  margin-left: 0;
+}
+
+#button-close {
+  background-color: var(--button-close);
+}
+
+#button-minimize {
+  background-color: var(--button-minimize);
+}
+
+#button-maximize {
+  background-color: var(--button-maximize);
+}
+
+/* Title's text */
+#window-title {
+  font-size: 0.8rem;
+}
+
+/* -------------------------------------------------- */
+/* Display digits */
+
+#display {
+  margin: 0.3rem 0.7rem;
+  font-size: 2.2rem;
+  text-align: right;
+  color: var(--text-color);
+}
+
+/* -------------------------------------------------- */
+/* Keyboard */
+#digits {
+  display: flex;
+  flex-direction: column;
+}
+
+#digits .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#digits button {
+  width: 25%;
+  height: 3rem;
+  font-size: 1.5rem;
+  border: none;
+  margin: 1px;
+  background-color: var(--button-color);
+  color: var(--text-color);
+}
+
+#digits .digits-advanced button {
+  background-color: var(--button-advanced);
+}
+
+#digits .digits-basic-operation {
+  background-color: var(--color-primary) !important;
+}
+
+#digits .button-zero {
+  width: 51%;
+  margin: 1px;
+}
+
+footer,
+footer a {
+  text-align: center;
+  color: var(--text-color-credits);
+  text-decoration: none;
+  transition: ease-in-out 0.4s;
+}
+
+footer a:hover {
+  color: var(--pure-white);
+}
