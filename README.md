@@ -4,13 +4,13 @@
 
 ### Outros trabalhos
 
-- [calculadora mac os](works/calculadora-macos)
+- [Calculadora Macos](works/calculadora-macos)
 
   Calculadora feita com HTML e CSS utilizando flexbox para criar o layout.
 
   ![Screenshot](works/calculadora-macos/images/screenshot.png)
 
-- [web business card](works/app-bussiness-card)
+- [Web Business Card](works/app-bussiness-card)
   _One Page_ é um projeto que atua como um cartão de visitas web.
 
   ![Screenshot](works/app-bussiness-card/images/screenshot.png)
